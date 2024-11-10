@@ -1,0 +1,2546 @@
+[
+    {
+        "Name": "Dancing Daggers",
+        "Str": 22,
+        "Con": 10,
+        "Dex": 28,
+        "ChallengeRating": 9.0,
+        "CRadjust": 3
+    },
+    {
+        "Name": "Bugbear Beserker",
+        "Str": 40,
+        "Con": 13,
+        "Dex": 12,
+        "ChallengeRating": 40.0,
+        "CRadjust": -11
+    },
+    {
+        "Name": "Supreme Master Li",
+        "Str": 80,
+        "Con": 30,
+        "Dex": 15,
+        "ChallengeRating": 640.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Underworld Werewolf Priest",
+        "Str": 66,
+        "Con": 4,
+        "Dex": 12,
+        "ChallengeRating": 44.0,
+        "CRadjust": -69
+    },
+    {
+        "Name": "Greater Erinyes Demon",
+        "Str": 66,
+        "Con": 10,
+        "Dex": 10,
+        "ChallengeRating": 44.0,
+        "CRadjust": -124
+    },
+    {
+        "Name": "Greater Ogre Priest",
+        "Str": 66,
+        "Con": 16,
+        "Dex": 8,
+        "ChallengeRating": 44.0,
+        "CRadjust": -42
+    },
+    {
+        "Name": "Drow Wizard",
+        "Str": 12,
+        "Con": 14,
+        "Dex": 30,
+        "ChallengeRating": 22.0,
+        "CRadjust": -13
+    },
+    {
+        "Name": "Master of the Brothel",
+        "Str": 88,
+        "Con": 80,
+        "Dex": 80,
+        "ChallengeRating": 161.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Greater Astral Tiger",
+        "Str": 66,
+        "Con": 20,
+        "Dex": 14,
+        "ChallengeRating": 44.0,
+        "CRadjust": -55
+    },
+    {
+        "Name": "Female Body Model",
+        "Str": 16,
+        "Con": 16,
+        "Dex": 13,
+        "ChallengeRating": 0.5,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Greater Vampire Warrior",
+        "Str": 28,
+        "Con": 12,
+        "Dex": 20,
+        "ChallengeRating": 29.0,
+        "CRadjust": -6
+    },
+    {
+        "Name": "Tailoring Model",
+        "Str": 15,
+        "Con": 12,
+        "Dex": 13,
+        "ChallengeRating": 0.5,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Deathbringer",
+        "Str": 98,
+        "Con": 98,
+        "Dex": 98,
+        "ChallengeRating": 5219.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Old Razhid",
+        "Str": 41,
+        "Con": 26,
+        "Dex": 52,
+        "ChallengeRating": 271.0,
+        "CRadjust": 5
+    },
+    {
+        "Name": "Greater Gaurdian",
+        "Str": 100,
+        "Con": 50,
+        "Dex": 20,
+        "ChallengeRating": 130.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Zatarra",
+        "Str": 94,
+        "Con": 90,
+        "Dex": 90,
+        "ChallengeRating": 44.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "bad DM",
+        "Str": 100,
+        "Con": 100,
+        "Dex": 100,
+        "ChallengeRating": 480.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Ettercap",
+        "Str": 16,
+        "Con": 16,
+        "Dex": 24,
+        "ChallengeRating": 4.0,
+        "CRadjust": -4
+    },
+    {
+        "Name": "Rakshasa - Female",
+        "Str": 30,
+        "Con": 16,
+        "Dex": 24,
+        "ChallengeRating": 44.0,
+        "CRadjust": -5
+    },
+    {
+        "Name": "Arcane Golem",
+        "Str": 68,
+        "Con": 20,
+        "Dex": 20,
+        "ChallengeRating": 42.0,
+        "CRadjust": -33
+    },
+    {
+        "Name": "Living Darkness",
+        "Str": 20,
+        "Con": 12,
+        "Dex": 20,
+        "ChallengeRating": 31.0,
+        "CRadjust": 11
+    },
+    {
+        "Name": "Howling Imp",
+        "Str": 35,
+        "Con": 19,
+        "Dex": 35,
+        "ChallengeRating": 28.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "The Arch Priest of the Unholy",
+        "Str": 98,
+        "Con": 12,
+        "Dex": 18,
+        "ChallengeRating": 223.0,
+        "CRadjust": -61
+    },
+    {
+        "Name": "Brothel Trademaster",
+        "Str": 55,
+        "Con": 50,
+        "Dex": 58,
+        "ChallengeRating": 45.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Jack",
+        "Str": 4,
+        "Con": 12,
+        "Dex": 12,
+        "ChallengeRating": 1105.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Merchant of the Abyss",
+        "Str": 90,
+        "Con": 80,
+        "Dex": 80,
+        "ChallengeRating": 1651.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Weapon Master of Tezzakazziitt",
+        "Str": 78,
+        "Con": 20,
+        "Dex": 16,
+        "ChallengeRating": 639.0,
+        "CRadjust": -18
+    },
+    {
+        "Name": "Underdark Mage",
+        "Str": 40,
+        "Con": 16,
+        "Dex": 20,
+        "ChallengeRating": 83.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Ancient Blue Wyrm",
+        "Str": 100,
+        "Con": 38,
+        "Dex": 16,
+        "ChallengeRating": 1410.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Medusa Fiend",
+        "Str": 40,
+        "Con": 10,
+        "Dex": 68,
+        "ChallengeRating": 44.0,
+        "CRadjust": -100
+    },
+    {
+        "Name": "Tailoring Model",
+        "Str": 15,
+        "Con": 12,
+        "Dex": 13,
+        "ChallengeRating": 0.5,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Blue Dragon",
+        "Str": 30,
+        "Con": 26,
+        "Dex": 16,
+        "ChallengeRating": 24.0,
+        "CRadjust": 8
+    },
+    {
+        "Name": "The Queen of the Drow",
+        "Str": 86,
+        "Con": 40,
+        "Dex": 13,
+        "ChallengeRating": 882.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Lord of the Vampires",
+        "Str": 56,
+        "Con": 28,
+        "Dex": 30,
+        "ChallengeRating": 95.0,
+        "CRadjust": -7
+    },
+    {
+        "Name": "Drow Warrior",
+        "Str": 30,
+        "Con": 14,
+        "Dex": 22,
+        "ChallengeRating": 19.0,
+        "CRadjust": -3
+    },
+    {
+        "Name": "bad angel",
+        "Str": 60,
+        "Con": 20,
+        "Dex": 40,
+        "ChallengeRating": 170.0,
+        "CRadjust": -1
+    },
+    {
+        "Name": "Underworld Banker",
+        "Str": 14,
+        "Con": 14,
+        "Dex": 8,
+        "ChallengeRating": 32.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Greater Owlbear",
+        "Str": 4,
+        "Con": 40,
+        "Dex": 10,
+        "ChallengeRating": 6.0,
+        "CRadjust": -1
+    },
+    {
+        "Name": "Valkamut's Greater Guard",
+        "Str": 26,
+        "Con": 18,
+        "Dex": 26,
+        "ChallengeRating": 44.0,
+        "CRadjust": -52
+    },
+    {
+        "Name": "\u2020Sunni\u2020 G\u00f8ddess Of The R\u00f8se",
+        "Str": 30,
+        "Con": 30,
+        "Dex": 30,
+        "ChallengeRating": 106.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Elder Air Elemental Fiend",
+        "Str": 66,
+        "Con": 14,
+        "Dex": 26,
+        "ChallengeRating": 279.0,
+        "CRadjust": 85
+    },
+    {
+        "Name": "Drow Drug Lord",
+        "Str": 98,
+        "Con": 38,
+        "Dex": 40,
+        "ChallengeRating": 2139.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Greater Doom Knight",
+        "Str": 25,
+        "Con": 20,
+        "Dex": 18,
+        "ChallengeRating": 19.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Summoned Angelic Warrior",
+        "Str": 60,
+        "Con": 20,
+        "Dex": 40,
+        "ChallengeRating": 171.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Underworld Vampire Priest",
+        "Str": 44,
+        "Con": 16,
+        "Dex": 14,
+        "ChallengeRating": 144.0,
+        "CRadjust": -55
+    },
+    {
+        "Name": "\u2020DM\u2020 GUILE",
+        "Str": 100,
+        "Con": 100,
+        "Dex": 100,
+        "ChallengeRating": 480.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Battle Horror",
+        "Str": 30,
+        "Con": 10,
+        "Dex": 23,
+        "ChallengeRating": 10.0,
+        "CRadjust": -5
+    },
+    {
+        "Name": "Monk Fiend",
+        "Str": 48,
+        "Con": 16,
+        "Dex": 28,
+        "ChallengeRating": 42.0,
+        "CRadjust": -7
+    },
+    {
+        "Name": "Ancient Underworld Wyrm",
+        "Str": 100,
+        "Con": 30,
+        "Dex": 11,
+        "ChallengeRating": 1690.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Underworld Frost Giant Cleric",
+        "Str": 66,
+        "Con": 24,
+        "Dex": 12,
+        "ChallengeRating": 781.0,
+        "CRadjust": 48
+    },
+    {
+        "Name": "The Grimm Reefer",
+        "Str": 100,
+        "Con": 100,
+        "Dex": 100,
+        "ChallengeRating": 3520.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Dancing Long Bow",
+        "Str": 32,
+        "Con": 10,
+        "Dex": 68,
+        "ChallengeRating": 196.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Shield Guardian",
+        "Str": 48,
+        "Con": 18,
+        "Dex": 16,
+        "ChallengeRating": 34.0,
+        "CRadjust": -19
+    },
+    {
+        "Name": "Abyssal Devil",
+        "Str": 66,
+        "Con": 12,
+        "Dex": 10,
+        "ChallengeRating": 44.0,
+        "CRadjust": -57
+    },
+    {
+        "Name": "Master of the Brothel",
+        "Str": 80,
+        "Con": 80,
+        "Dex": 80,
+        "ChallengeRating": 120.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Ancient Green Dragon",
+        "Str": 100,
+        "Con": 40,
+        "Dex": 29,
+        "ChallengeRating": 1581.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "The Matriarch of the Lost",
+        "Str": 34,
+        "Con": 10,
+        "Dex": 10,
+        "ChallengeRating": 103.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "\u2020Warit Isri\u2020 God of Wrath",
+        "Str": 30,
+        "Con": 30,
+        "Dex": 30,
+        "ChallengeRating": 30.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Epic Underworld Battle Mage",
+        "Str": 16,
+        "Con": 18,
+        "Dex": 30,
+        "ChallengeRating": 48.0,
+        "CRadjust": -36
+    },
+    {
+        "Name": "Air Elemental Fiend",
+        "Str": 66,
+        "Con": 14,
+        "Dex": 26,
+        "ChallengeRating": 273.0,
+        "CRadjust": 69
+    },
+    {
+        "Name": "Gray Render Mother",
+        "Str": 45,
+        "Con": 24,
+        "Dex": 43,
+        "ChallengeRating": 15.0,
+        "CRadjust": 2
+    },
+    {
+        "Name": "Very Old Wyrm",
+        "Str": 90,
+        "Con": 20,
+        "Dex": 12,
+        "ChallengeRating": 69.0,
+        "CRadjust": 5
+    },
+    {
+        "Name": "Zurt",
+        "Str": 15,
+        "Con": 13,
+        "Dex": 10,
+        "ChallengeRating": 3.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Rogue Spectre",
+        "Str": 12,
+        "Con": 11,
+        "Dex": 18,
+        "ChallengeRating": 31.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Dancing Scimitars",
+        "Str": 26,
+        "Con": 14,
+        "Dex": 30,
+        "ChallengeRating": 26.0,
+        "CRadjust": 3
+    },
+    {
+        "Name": "The Master of the Void",
+        "Str": 100,
+        "Con": 60,
+        "Dex": 100,
+        "ChallengeRating": 4194.0,
+        "CRadjust": 100
+    },
+    {
+        "Name": "Underworld Death Sladd",
+        "Str": 44,
+        "Con": 18,
+        "Dex": 38,
+        "ChallengeRating": 21.0,
+        "CRadjust": -8
+    },
+    {
+        "Name": "Draconian",
+        "Str": 48,
+        "Con": 24,
+        "Dex": 18,
+        "ChallengeRating": 32.0,
+        "CRadjust": -31
+    },
+    {
+        "Name": "Underworld Werewolf Hybrid",
+        "Str": 66,
+        "Con": 10,
+        "Dex": 10,
+        "ChallengeRating": 44.0,
+        "CRadjust": -78
+    },
+    {
+        "Name": "The God of Fire",
+        "Str": 100,
+        "Con": 30,
+        "Dex": 38,
+        "ChallengeRating": 607.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Greater Stinger Chieftan",
+        "Str": 98,
+        "Con": 24,
+        "Dex": 34,
+        "ChallengeRating": 658.0,
+        "CRadjust": 1
+    },
+    {
+        "Name": "Gray Render Queen",
+        "Str": 48,
+        "Con": 34,
+        "Dex": 48,
+        "ChallengeRating": 17.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Ancient Monk",
+        "Str": 68,
+        "Con": 10,
+        "Dex": 68,
+        "ChallengeRating": 316.0,
+        "CRadjust": -38
+    },
+    {
+        "Name": "Hell's Merchant",
+        "Str": 90,
+        "Con": 80,
+        "Dex": 80,
+        "ChallengeRating": 1651.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Ghost of the Underworld",
+        "Str": 16,
+        "Con": 14,
+        "Dex": 14,
+        "ChallengeRating": 10.0,
+        "CRadjust": 3
+    },
+    {
+        "Name": "Shadow Guard",
+        "Str": 22,
+        "Con": 10,
+        "Dex": 50,
+        "ChallengeRating": 42.0,
+        "CRadjust": -49
+    },
+    {
+        "Name": "Hook Horror",
+        "Str": 24,
+        "Con": 18,
+        "Dex": 20,
+        "ChallengeRating": 8.0,
+        "CRadjust": -2
+    },
+    {
+        "Name": "Githyanki",
+        "Str": 66,
+        "Con": 18,
+        "Dex": 20,
+        "ChallengeRating": 44.0,
+        "CRadjust": -63
+    },
+    {
+        "Name": "Arena Armorer",
+        "Str": 88,
+        "Con": 80,
+        "Dex": 80,
+        "ChallengeRating": 161.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Ancient White Dragon",
+        "Str": 100,
+        "Con": 40,
+        "Dex": 11,
+        "ChallengeRating": 1559.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Black Widow Fiend",
+        "Str": 96,
+        "Con": 10,
+        "Dex": 10,
+        "ChallengeRating": 44.0,
+        "CRadjust": -97
+    },
+    {
+        "Name": "Razhids Undead Guard",
+        "Str": 44,
+        "Con": 22,
+        "Dex": 12,
+        "ChallengeRating": 44.0,
+        "CRadjust": -16
+    },
+    {
+        "Name": "Tiefling Fiend",
+        "Str": 66,
+        "Con": 12,
+        "Dex": 10,
+        "ChallengeRating": 637.0,
+        "CRadjust": 27
+    },
+    {
+        "Name": "Greater Tiefling Fiend",
+        "Str": 100,
+        "Con": 20,
+        "Dex": 20,
+        "ChallengeRating": 713.0,
+        "CRadjust": 15
+    },
+    {
+        "Name": "\u2020Sir Gil\u2020 God of the Dwarven Defenders",
+        "Str": 30,
+        "Con": 30,
+        "Dex": 30,
+        "ChallengeRating": 36.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Greater Balor Lord",
+        "Str": 60,
+        "Con": 16,
+        "Dex": 20,
+        "ChallengeRating": 19.0,
+        "CRadjust": -43
+    },
+    {
+        "Name": "Helmed Horror",
+        "Str": 16,
+        "Con": 10,
+        "Dex": 13,
+        "ChallengeRating": 10.0,
+        "CRadjust": -2
+    },
+    {
+        "Name": "Greater Underworld Battle Mage",
+        "Str": 14,
+        "Con": 18,
+        "Dex": 26,
+        "ChallengeRating": 39.0,
+        "CRadjust": -35
+    },
+    {
+        "Name": "Ancient Dragon Guard",
+        "Str": 68,
+        "Con": 10,
+        "Dex": 10,
+        "ChallengeRating": 44.0,
+        "CRadjust": -82
+    },
+    {
+        "Name": "",
+        "Str": 16,
+        "Con": 16,
+        "Dex": 13,
+        "ChallengeRating": 0.25,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Ancient Red Dragon",
+        "Str": 13,
+        "Con": 13,
+        "Dex": 10,
+        "ChallengeRating": 1.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Undeworld Render",
+        "Str": 68,
+        "Con": 30,
+        "Dex": 10,
+        "ChallengeRating": 44.0,
+        "CRadjust": -54
+    },
+    {
+        "Name": "Greater Underworld Soldier",
+        "Str": 46,
+        "Con": 20,
+        "Dex": 24,
+        "ChallengeRating": 26.0,
+        "CRadjust": -83
+    },
+    {
+        "Name": "Greater Stinger Warrior",
+        "Str": 48,
+        "Con": 20,
+        "Dex": 30,
+        "ChallengeRating": 44.0,
+        "CRadjust": -95
+    },
+    {
+        "Name": "Duergar Mage",
+        "Str": 40,
+        "Con": 20,
+        "Dex": 20,
+        "ChallengeRating": 43.0,
+        "CRadjust": -42
+    },
+    {
+        "Name": "Rakshasa Fiend",
+        "Str": 66,
+        "Con": 10,
+        "Dex": 10,
+        "ChallengeRating": 44.0,
+        "CRadjust": -111
+    },
+    {
+        "Name": "King of the Sladds",
+        "Str": 96,
+        "Con": 17,
+        "Dex": 20,
+        "ChallengeRating": 1027.0,
+        "CRadjust": -47
+    },
+    {
+        "Name": "Dust Fiend",
+        "Str": 66,
+        "Con": 16,
+        "Dex": 8,
+        "ChallengeRating": 44.0,
+        "CRadjust": -54
+    },
+    {
+        "Name": "The Lich King",
+        "Str": 92,
+        "Con": 40,
+        "Dex": 31,
+        "ChallengeRating": 519.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Aybssal Succubus",
+        "Str": 66,
+        "Con": 14,
+        "Dex": 14,
+        "ChallengeRating": 44.0,
+        "CRadjust": -40
+    },
+    {
+        "Name": "Arch Mage of Tezzakazziitt",
+        "Str": 30,
+        "Con": 30,
+        "Dex": 26,
+        "ChallengeRating": 334.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Underworld Werewolf Shaman",
+        "Str": 44,
+        "Con": 10,
+        "Dex": 12,
+        "ChallengeRating": 44.0,
+        "CRadjust": -94
+    },
+    {
+        "Name": "The Ancient God of Desolation",
+        "Str": 98,
+        "Con": 30,
+        "Dex": 30,
+        "ChallengeRating": 2296.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Greater Draconian Priest",
+        "Str": 66,
+        "Con": 12,
+        "Dex": 12,
+        "ChallengeRating": 44.0,
+        "CRadjust": -24
+    },
+    {
+        "Name": "Quickling",
+        "Str": 12,
+        "Con": 11,
+        "Dex": 16,
+        "ChallengeRating": 3.0,
+        "CRadjust": 1
+    },
+    {
+        "Name": "Sahuagin Fiend",
+        "Str": 34,
+        "Con": 14,
+        "Dex": 28,
+        "ChallengeRating": 36.0,
+        "CRadjust": -46
+    },
+    {
+        "Name": "Underworld Dragon Kin",
+        "Str": 66,
+        "Con": 20,
+        "Dex": 20,
+        "ChallengeRating": 44.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "The Angel of Death",
+        "Str": 100,
+        "Con": 40,
+        "Dex": 40,
+        "ChallengeRating": 6854.0,
+        "CRadjust": 125
+    },
+    {
+        "Name": "The Reaver",
+        "Str": 98,
+        "Con": 30,
+        "Dex": 30,
+        "ChallengeRating": 1399.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Penguin Fiend",
+        "Str": 64,
+        "Con": 22,
+        "Dex": 10,
+        "ChallengeRating": 44.0,
+        "CRadjust": -78
+    },
+    {
+        "Name": "Repulsive Imp",
+        "Str": 35,
+        "Con": 19,
+        "Dex": 35,
+        "ChallengeRating": 29.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Greater Blue Slaad",
+        "Str": 36,
+        "Con": 16,
+        "Dex": 20,
+        "ChallengeRating": 38.0,
+        "CRadjust": 6
+    },
+    {
+        "Name": "Duergar Cleric",
+        "Str": 62,
+        "Con": 18,
+        "Dex": 12,
+        "ChallengeRating": 45.0,
+        "CRadjust": -112
+    },
+    {
+        "Name": "\u2020EXODUS\u2020 GOD OF DEATH \u2020",
+        "Str": 30,
+        "Con": 30,
+        "Dex": 30,
+        "ChallengeRating": 61.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Rogue Spectre.",
+        "Str": 20,
+        "Con": 20,
+        "Dex": 20,
+        "ChallengeRating": 37.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Arch Mage Guile",
+        "Str": 80,
+        "Con": 40,
+        "Dex": 50,
+        "ChallengeRating": 5560.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Moe",
+        "Str": 28,
+        "Con": 13,
+        "Dex": 13,
+        "ChallengeRating": 33.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Abyssal Shadow",
+        "Str": 46,
+        "Con": 10,
+        "Dex": 12,
+        "ChallengeRating": 44.0,
+        "CRadjust": -103
+    },
+    {
+        "Name": "Null Gaurd",
+        "Str": 98,
+        "Con": 98,
+        "Dex": 98,
+        "ChallengeRating": 685.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Ancient Sahuagin Cleric",
+        "Str": 40,
+        "Con": 18,
+        "Dex": 29,
+        "ChallengeRating": 38.0,
+        "CRadjust": -40
+    },
+    {
+        "Name": "Combat Dummy",
+        "Str": 3,
+        "Con": 30,
+        "Dex": 30,
+        "ChallengeRating": 2.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "King of the Ogres",
+        "Str": 100,
+        "Con": 84,
+        "Dex": 8,
+        "ChallengeRating": 912.0,
+        "CRadjust": -21
+    },
+    {
+        "Name": "Greater Ogre Beserker",
+        "Str": 66,
+        "Con": 60,
+        "Dex": 8,
+        "ChallengeRating": 44.0,
+        "CRadjust": -28
+    },
+    {
+        "Name": "Flame Imp",
+        "Str": 35,
+        "Con": 19,
+        "Dex": 35,
+        "ChallengeRating": 28.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Underworld Battle Priest",
+        "Str": 28,
+        "Con": 18,
+        "Dex": 12,
+        "ChallengeRating": 21.0,
+        "CRadjust": -52
+    },
+    {
+        "Name": "Draconian",
+        "Str": 48,
+        "Con": 20,
+        "Dex": 18,
+        "ChallengeRating": 44.0,
+        "CRadjust": -58
+    },
+    {
+        "Name": "Queen's Gaurdain",
+        "Str": 100,
+        "Con": 60,
+        "Dex": 20,
+        "ChallengeRating": 124.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Orc King",
+        "Str": 98,
+        "Con": 32,
+        "Dex": 12,
+        "ChallengeRating": 201.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Damaged Golem",
+        "Str": 20,
+        "Con": 10,
+        "Dex": 13,
+        "ChallengeRating": 28.0,
+        "CRadjust": 9
+    },
+    {
+        "Name": "Drow Elite Cleric",
+        "Str": 68,
+        "Con": 18,
+        "Dex": 20,
+        "ChallengeRating": 50.0,
+        "CRadjust": -119
+    },
+    {
+        "Name": "Shard",
+        "Str": 28,
+        "Con": 13,
+        "Dex": 13,
+        "ChallengeRating": 30.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Ice Imp",
+        "Str": 35,
+        "Con": 19,
+        "Dex": 35,
+        "ChallengeRating": 28.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Minotaur Chieftain",
+        "Str": 19,
+        "Con": 15,
+        "Dex": 10,
+        "ChallengeRating": 33.0,
+        "CRadjust": 3
+    },
+    {
+        "Name": "Summoned Dragon Fiend",
+        "Str": 46,
+        "Con": 20,
+        "Dex": 30,
+        "ChallengeRating": 17.0,
+        "CRadjust": -40
+    },
+    {
+        "Name": "The Lord of Shadows",
+        "Str": 100,
+        "Con": 20,
+        "Dex": 26,
+        "ChallengeRating": 1917.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Larry",
+        "Str": 28,
+        "Con": 13,
+        "Dex": 13,
+        "ChallengeRating": 33.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Ancient Draconian King",
+        "Str": 100,
+        "Con": 40,
+        "Dex": 29,
+        "ChallengeRating": 1583.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Underworld Frost Giant",
+        "Str": 66,
+        "Con": 36,
+        "Dex": 14,
+        "ChallengeRating": 783.0,
+        "CRadjust": 53
+    },
+    {
+        "Name": "Drow Warrior",
+        "Str": 30,
+        "Con": 14,
+        "Dex": 20,
+        "ChallengeRating": 18.0,
+        "CRadjust": -1
+    },
+    {
+        "Name": "\u2020L\u00edv\u00edng \u00d0\u00e9\u00e0d\u2020 G\u00d8\u00f0 \u00d8\u0192 L\u00b5s\u2020\u0192\u00b5l \u00d1\u00edgh\u2020m\u00e1r\u00e8",
+        "Str": 30,
+        "Con": 30,
+        "Dex": 30,
+        "ChallengeRating": 2.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Greater Succubus",
+        "Str": 30,
+        "Con": 20,
+        "Dex": 44,
+        "ChallengeRating": 24.0,
+        "CRadjust": -97
+    },
+    {
+        "Name": "Epic Underworld Battle Priest",
+        "Str": 48,
+        "Con": 24,
+        "Dex": 12,
+        "ChallengeRating": 277.0,
+        "CRadjust": -109
+    },
+    {
+        "Name": "Lesser Abyssal Devil",
+        "Str": 66,
+        "Con": 10,
+        "Dex": 14,
+        "ChallengeRating": 43.0,
+        "CRadjust": -32
+    },
+    {
+        "Name": "Greater Dancing Long Bow",
+        "Str": 36,
+        "Con": 10,
+        "Dex": 90,
+        "ChallengeRating": 186.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Guardian of Malice",
+        "Str": 66,
+        "Con": 10,
+        "Dex": 24,
+        "ChallengeRating": 1680.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Greater Ogre Magi",
+        "Str": 44,
+        "Con": 15,
+        "Dex": 8,
+        "ChallengeRating": 44.0,
+        "CRadjust": -47
+    },
+    {
+        "Name": "Ancient Underworld Sladd",
+        "Str": 68,
+        "Con": 18,
+        "Dex": 10,
+        "ChallengeRating": 44.0,
+        "CRadjust": -77
+    },
+    {
+        "Name": "Planar Beholder",
+        "Str": 66,
+        "Con": 30,
+        "Dex": 4,
+        "ChallengeRating": 44.0,
+        "CRadjust": -24
+    },
+    {
+        "Name": "\u2020Kenpo\u2020 God of Justice",
+        "Str": 30,
+        "Con": 30,
+        "Dex": 30,
+        "ChallengeRating": 147.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Queen of the Werewolves",
+        "Str": 100,
+        "Con": 18,
+        "Dex": 30,
+        "ChallengeRating": 251.0,
+        "CRadjust": 8
+    },
+    {
+        "Name": "Gray Render",
+        "Str": 38,
+        "Con": 26,
+        "Dex": 32,
+        "ChallengeRating": 16.0,
+        "CRadjust": 3
+    },
+    {
+        "Name": "Epic Underworld Soldier",
+        "Str": 62,
+        "Con": 24,
+        "Dex": 45,
+        "ChallengeRating": 417.0,
+        "CRadjust": 4
+    },
+    {
+        "Name": "Drow Assassin",
+        "Str": 14,
+        "Con": 12,
+        "Dex": 28,
+        "ChallengeRating": 16.0,
+        "CRadjust": -6
+    },
+    {
+        "Name": "The Scribe",
+        "Str": 3,
+        "Con": 3,
+        "Dex": 3,
+        "ChallengeRating": 0.25,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Duergar Warrior",
+        "Str": 64,
+        "Con": 40,
+        "Dex": 12,
+        "ChallengeRating": 43.0,
+        "CRadjust": -89
+    },
+    {
+        "Name": "The Judge",
+        "Str": 90,
+        "Con": 90,
+        "Dex": 90,
+        "ChallengeRating": 551.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Pixels",
+        "Str": 99,
+        "Con": 99,
+        "Dex": 99,
+        "ChallengeRating": 41.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Mother of all Dragons",
+        "Str": 99,
+        "Con": 55,
+        "Dex": 99,
+        "ChallengeRating": 231.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Heavenly Angel",
+        "Str": 30,
+        "Con": 32,
+        "Dex": 28,
+        "ChallengeRating": 616.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "trashed monster (bad)",
+        "Str": 100,
+        "Con": 10,
+        "Dex": 10,
+        "ChallengeRating": 755.0,
+        "CRadjust": 1
+    },
+    {
+        "Name": "Acid Imp",
+        "Str": 35,
+        "Con": 19,
+        "Dex": 35,
+        "ChallengeRating": 28.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "bad egeta",
+        "Str": 30,
+        "Con": 30,
+        "Dex": 30,
+        "ChallengeRating": 140.0,
+        "CRadjust": 5
+    },
+    {
+        "Name": "Underworld Banshee",
+        "Str": 56,
+        "Con": 16,
+        "Dex": 12,
+        "ChallengeRating": 44.0,
+        "CRadjust": -57
+    },
+    {
+        "Name": "Heavenly Angel",
+        "Str": 30,
+        "Con": 32,
+        "Dex": 28,
+        "ChallengeRating": 616.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Ancient Green Dragon",
+        "Str": 88,
+        "Con": 30,
+        "Dex": 10,
+        "ChallengeRating": 44.0,
+        "CRadjust": -64
+    },
+    {
+        "Name": "Drow Merchant",
+        "Str": 98,
+        "Con": 50,
+        "Dex": 98,
+        "ChallengeRating": 2977.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Apprentise",
+        "Str": 3,
+        "Con": 10,
+        "Dex": 10,
+        "ChallengeRating": 0.25,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Orc Berserker Fiend",
+        "Str": 66,
+        "Con": 16,
+        "Dex": 12,
+        "ChallengeRating": 44.0,
+        "CRadjust": -98
+    },
+    {
+        "Name": "Old Greater Abyss Devil",
+        "Str": 90,
+        "Con": 20,
+        "Dex": 3,
+        "ChallengeRating": 81.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Fey Duster",
+        "Str": 30,
+        "Con": 30,
+        "Dex": 30,
+        "ChallengeRating": 1079.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Living Statue",
+        "Str": 41,
+        "Con": 18,
+        "Dex": 10,
+        "ChallengeRating": 20.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Ancient Vampire",
+        "Str": 33,
+        "Con": 22,
+        "Dex": 40,
+        "ChallengeRating": 18.0,
+        "CRadjust": -81
+    },
+    {
+        "Name": "Candy",
+        "Str": 15,
+        "Con": 12,
+        "Dex": 13,
+        "ChallengeRating": 274.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "bad monster",
+        "Str": 100,
+        "Con": 36,
+        "Dex": 32,
+        "ChallengeRating": 42.0,
+        "CRadjust": 3
+    },
+    {
+        "Name": "Greater Astral Devil",
+        "Str": 66,
+        "Con": 20,
+        "Dex": 14,
+        "ChallengeRating": 44.0,
+        "CRadjust": -57
+    },
+    {
+        "Name": "Greater Living Darkness",
+        "Str": 50,
+        "Con": 12,
+        "Dex": 12,
+        "ChallengeRating": 47.0,
+        "CRadjust": 1
+    },
+    {
+        "Name": "The Greater God of Greed",
+        "Str": 98,
+        "Con": 30,
+        "Dex": 30,
+        "ChallengeRating": 2289.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Underworld Guard",
+        "Str": 100,
+        "Con": 100,
+        "Dex": 100,
+        "ChallengeRating": 2608.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "The Devil",
+        "Str": 98,
+        "Con": 30,
+        "Dex": 30,
+        "ChallengeRating": 2629.0,
+        "CRadjust": 3
+    },
+    {
+        "Name": "Buffalo (Test Dummy)",
+        "Str": 4,
+        "Con": 80,
+        "Dex": 34,
+        "ChallengeRating": 747.0,
+        "CRadjust": 2
+    },
+    {
+        "Name": "King's Fire Gaurd",
+        "Str": 66,
+        "Con": 20,
+        "Dex": 16,
+        "ChallengeRating": 44.0,
+        "CRadjust": -5
+    },
+    {
+        "Name": "Magnetic Imp",
+        "Str": 35,
+        "Con": 19,
+        "Dex": 35,
+        "ChallengeRating": 28.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Greater Underworld Battle Priest",
+        "Str": 44,
+        "Con": 20,
+        "Dex": 12,
+        "ChallengeRating": 31.0,
+        "CRadjust": -58
+    },
+    {
+        "Name": "Queen of the Yaunti",
+        "Str": 80,
+        "Con": 20,
+        "Dex": 11,
+        "ChallengeRating": 775.0,
+        "CRadjust": 104
+    },
+    {
+        "Name": "Greater Battle Horror",
+        "Str": 36,
+        "Con": 18,
+        "Dex": 14,
+        "ChallengeRating": 24.0,
+        "CRadjust": -21
+    },
+    {
+        "Name": "Summoned Angelic Warrior",
+        "Str": 36,
+        "Con": 26,
+        "Dex": 14,
+        "ChallengeRating": 77.0,
+        "CRadjust": -83
+    },
+    {
+        "Name": "Giant Cave Troll",
+        "Str": 34,
+        "Con": 20,
+        "Dex": 20,
+        "ChallengeRating": 40.0,
+        "CRadjust": 15
+    },
+    {
+        "Name": "Greater Yaunti Guardian",
+        "Str": 44,
+        "Con": 14,
+        "Dex": 24,
+        "ChallengeRating": 246.0,
+        "CRadjust": 41
+    },
+    {
+        "Name": "Greater Yuan-ti Priest",
+        "Str": 44,
+        "Con": 14,
+        "Dex": 6,
+        "ChallengeRating": 225.0,
+        "CRadjust": 86
+    },
+    {
+        "Name": "Ancient Dragon Knight",
+        "Str": 88,
+        "Con": 26,
+        "Dex": 16,
+        "ChallengeRating": 31.0,
+        "CRadjust": -13
+    },
+    {
+        "Name": "Ancient Demi Lich",
+        "Str": 16,
+        "Con": 17,
+        "Dex": 36,
+        "ChallengeRating": 16.0,
+        "CRadjust": -82
+    },
+    {
+        "Name": "Giant Cave Troll Beserker",
+        "Str": 38,
+        "Con": 26,
+        "Dex": 18,
+        "ChallengeRating": 36.0,
+        "CRadjust": 11
+    },
+    {
+        "Name": "Drow Cleric",
+        "Str": 30,
+        "Con": 16,
+        "Dex": 20,
+        "ChallengeRating": 22.0,
+        "CRadjust": -19
+    },
+    {
+        "Name": "Storage Npc",
+        "Str": 16,
+        "Con": 16,
+        "Dex": 13,
+        "ChallengeRating": 0.5,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Underworld Death Sladd",
+        "Str": 60,
+        "Con": 26,
+        "Dex": 24,
+        "ChallengeRating": 24.0,
+        "CRadjust": -23
+    },
+    {
+        "Name": "\u2020KaRMa\u2020 G\u00f8D \u00f8f YiNG & YaNG",
+        "Str": 30,
+        "Con": 30,
+        "Dex": 30,
+        "ChallengeRating": 20.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Greater Shadow Priest",
+        "Str": 66,
+        "Con": 10,
+        "Dex": 12,
+        "ChallengeRating": 44.0,
+        "CRadjust": -90
+    },
+    {
+        "Name": "Elder Air Elemental",
+        "Str": 24,
+        "Con": 18,
+        "Dex": 38,
+        "ChallengeRating": 20.0,
+        "CRadjust": -4
+    },
+    {
+        "Name": "The Greater God of Ruin",
+        "Str": 100,
+        "Con": 30,
+        "Dex": 30,
+        "ChallengeRating": 3189.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "The Scribe",
+        "Str": 12,
+        "Con": 12,
+        "Dex": 12,
+        "ChallengeRating": 10.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Greater Hieracosphinx",
+        "Str": 66,
+        "Con": 10,
+        "Dex": 10,
+        "ChallengeRating": 44.0,
+        "CRadjust": -85
+    },
+    {
+        "Name": "Mountain Giant Beserker",
+        "Str": 30,
+        "Con": 22,
+        "Dex": 8,
+        "ChallengeRating": 25.0,
+        "CRadjust": 10
+    },
+    {
+        "Name": "Ogre Beserker",
+        "Str": 66,
+        "Con": 60,
+        "Dex": 8,
+        "ChallengeRating": 44.0,
+        "CRadjust": -23
+    },
+    {
+        "Name": "trashed monster (bad)",
+        "Str": 100,
+        "Con": 28,
+        "Dex": 10,
+        "ChallengeRating": 720.0,
+        "CRadjust": -21
+    },
+    {
+        "Name": "Drow Wizard",
+        "Str": 12,
+        "Con": 14,
+        "Dex": 30,
+        "ChallengeRating": 22.0,
+        "CRadjust": -13
+    },
+    {
+        "Name": "Laura",
+        "Str": 15,
+        "Con": 12,
+        "Dex": 13,
+        "ChallengeRating": 274.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Nymph Hoe Tweaker",
+        "Str": 76,
+        "Con": 46,
+        "Dex": 32,
+        "ChallengeRating": 472.0,
+        "CRadjust": -122
+    },
+    {
+        "Name": "Abyssal Denzien",
+        "Str": 66,
+        "Con": 12,
+        "Dex": 13,
+        "ChallengeRating": 44.0,
+        "CRadjust": -62
+    },
+    {
+        "Name": "a bad monster (don't use)",
+        "Str": 70,
+        "Con": 28,
+        "Dex": 20,
+        "ChallengeRating": 33.0,
+        "CRadjust": -58
+    },
+    {
+        "Name": "Bazmot's Guard",
+        "Str": 50,
+        "Con": 10,
+        "Dex": 10,
+        "ChallengeRating": 43.0,
+        "CRadjust": -54
+    },
+    {
+        "Name": "Dabus (Socketed Merchant)",
+        "Str": 100,
+        "Con": 100,
+        "Dex": 100,
+        "ChallengeRating": 632.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "The Greater God of Malice",
+        "Str": 98,
+        "Con": 30,
+        "Dex": 30,
+        "ChallengeRating": 2289.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Listener",
+        "Str": 10,
+        "Con": 14,
+        "Dex": 14,
+        "ChallengeRating": 0.5,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Ancient Shadow Dragon",
+        "Str": 98,
+        "Con": 50,
+        "Dex": 34,
+        "ChallengeRating": 123.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Summoned Firebrands",
+        "Str": 60,
+        "Con": 10,
+        "Dex": 60,
+        "ChallengeRating": 26.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Fire Elemental Fiend",
+        "Str": 66,
+        "Con": 18,
+        "Dex": 10,
+        "ChallengeRating": 44.0,
+        "CRadjust": -44
+    },
+    {
+        "Name": "Jasmine Goddess of Death",
+        "Str": 31,
+        "Con": 30,
+        "Dex": 30,
+        "ChallengeRating": 3.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Ancient Doom Knight",
+        "Str": 34,
+        "Con": 20,
+        "Dex": 14,
+        "ChallengeRating": 18.0,
+        "CRadjust": -86
+    },
+    {
+        "Name": "The Demi-God of the Abyss",
+        "Str": 100,
+        "Con": 30,
+        "Dex": 30,
+        "ChallengeRating": 712.0,
+        "CRadjust": -7
+    },
+    {
+        "Name": "Vampire Lord",
+        "Str": 30,
+        "Con": 18,
+        "Dex": 20,
+        "ChallengeRating": 76.0,
+        "CRadjust": -20
+    },
+    {
+        "Name": "Temple Priest",
+        "Str": 18,
+        "Con": 13,
+        "Dex": 11,
+        "ChallengeRating": 42.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Greater Beholder Mage",
+        "Str": 54,
+        "Con": 14,
+        "Dex": 14,
+        "ChallengeRating": 44.0,
+        "CRadjust": -62
+    },
+    {
+        "Name": "Underworld Wererat",
+        "Str": 12,
+        "Con": 13,
+        "Dex": 12,
+        "ChallengeRating": 15.0,
+        "CRadjust": 8
+    },
+    {
+        "Name": "\u2020DM\u2020 GUILE",
+        "Str": 100,
+        "Con": 100,
+        "Dex": 100,
+        "ChallengeRating": 480.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Drow Elite Wizard",
+        "Str": 20,
+        "Con": 12,
+        "Dex": 12,
+        "ChallengeRating": 51.0,
+        "CRadjust": -40
+    },
+    {
+        "Name": "Greater Stinger Shaman",
+        "Str": 52,
+        "Con": 20,
+        "Dex": 20,
+        "ChallengeRating": 44.0,
+        "CRadjust": -32
+    },
+    {
+        "Name": "~A`M`Y~ Goddess of Love",
+        "Str": 30,
+        "Con": 32,
+        "Dex": 28,
+        "ChallengeRating": 153.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Legendary Bad Resf",
+        "Str": 54,
+        "Con": 20,
+        "Dex": 30,
+        "ChallengeRating": 26.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Beholder, Death Tyrant",
+        "Str": 18,
+        "Con": 14,
+        "Dex": 10,
+        "ChallengeRating": 20.0,
+        "CRadjust": 2
+    },
+    {
+        "Name": "Wererat King",
+        "Str": 50,
+        "Con": 13,
+        "Dex": 23,
+        "ChallengeRating": 20.0,
+        "CRadjust": 9
+    },
+    {
+        "Name": "Ancient Warrior",
+        "Str": 76,
+        "Con": 10,
+        "Dex": 10,
+        "ChallengeRating": 315.0,
+        "CRadjust": -10
+    },
+    {
+        "Name": "Drow Elite Warrior",
+        "Str": 68,
+        "Con": 30,
+        "Dex": 18,
+        "ChallengeRating": 49.0,
+        "CRadjust": -105
+    },
+    {
+        "Name": "Minotaur Archer",
+        "Str": 20,
+        "Con": 15,
+        "Dex": 17,
+        "ChallengeRating": 11.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Arch Devil",
+        "Str": 100,
+        "Con": 16,
+        "Dex": 16,
+        "ChallengeRating": 617.0,
+        "CRadjust": -42
+    },
+    {
+        "Name": "Ancient Demi Lich",
+        "Str": 32,
+        "Con": 20,
+        "Dex": 10,
+        "ChallengeRating": 44.0,
+        "CRadjust": -31
+    },
+    {
+        "Name": "Summoned Vampire Lord",
+        "Str": 47,
+        "Con": 26,
+        "Dex": 36,
+        "ChallengeRating": 22.0,
+        "CRadjust": -28
+    },
+    {
+        "Name": "Greater Erinyes Fiend",
+        "Str": 66,
+        "Con": 10,
+        "Dex": 24,
+        "ChallengeRating": 1977.0,
+        "CRadjust": -14
+    },
+    {
+        "Name": "The Shadow Master",
+        "Str": 60,
+        "Con": 20,
+        "Dex": 40,
+        "ChallengeRating": 944.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "",
+        "Str": 34,
+        "Con": 22,
+        "Dex": 8,
+        "ChallengeRating": 12.0,
+        "CRadjust": -2
+    },
+    {
+        "Name": "Greater Draconian Berserker",
+        "Str": 66,
+        "Con": 25,
+        "Dex": 20,
+        "ChallengeRating": 44.0,
+        "CRadjust": -1
+    },
+    {
+        "Name": "Ancient Lich",
+        "Str": 42,
+        "Con": 18,
+        "Dex": 24,
+        "ChallengeRating": 22.0,
+        "CRadjust": -83
+    },
+    {
+        "Name": "Planar Gaurd",
+        "Str": 100,
+        "Con": 100,
+        "Dex": 100,
+        "ChallengeRating": 2608.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "The War Matron",
+        "Str": 78,
+        "Con": 20,
+        "Dex": 10,
+        "ChallengeRating": 329.0,
+        "CRadjust": -33
+    },
+    {
+        "Name": "Drow High Priestess",
+        "Str": 34,
+        "Con": 16,
+        "Dex": 12,
+        "ChallengeRating": 43.0,
+        "CRadjust": -20
+    },
+    {
+        "Name": "Valkamut",
+        "Str": 98,
+        "Con": 16,
+        "Dex": 27,
+        "ChallengeRating": 755.0,
+        "CRadjust": -21
+    },
+    {
+        "Name": "Greater Monk Fiend",
+        "Str": 48,
+        "Con": 12,
+        "Dex": 20,
+        "ChallengeRating": 42.0,
+        "CRadjust": -17
+    },
+    {
+        "Name": "God of Storms",
+        "Str": 98,
+        "Con": 30,
+        "Dex": 30,
+        "ChallengeRating": 1380.0,
+        "CRadjust": 2
+    },
+    {
+        "Name": "Githzari Assasin",
+        "Str": 66,
+        "Con": 12,
+        "Dex": 18,
+        "ChallengeRating": 997.0,
+        "CRadjust": 42
+    },
+    {
+        "Name": "Underworld Battle Mage",
+        "Str": 14,
+        "Con": 18,
+        "Dex": 26,
+        "ChallengeRating": 22.0,
+        "CRadjust": -35
+    },
+    {
+        "Name": "God of the Dead",
+        "Str": 100,
+        "Con": 30,
+        "Dex": 12,
+        "ChallengeRating": 1574.0,
+        "CRadjust": 4
+    },
+    {
+        "Name": "Underworld Minotaur",
+        "Str": 44,
+        "Con": 18,
+        "Dex": 10,
+        "ChallengeRating": 42.0,
+        "CRadjust": -14
+    },
+    {
+        "Name": "King of the Rakashasa",
+        "Str": 90,
+        "Con": 30,
+        "Dex": 30,
+        "ChallengeRating": 1953.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Greater Underworld Werewolf",
+        "Str": 66,
+        "Con": 10,
+        "Dex": 10,
+        "ChallengeRating": 44.0,
+        "CRadjust": -62
+    },
+    {
+        "Name": "Legendary Astral Bear",
+        "Str": 54,
+        "Con": 20,
+        "Dex": 30,
+        "ChallengeRating": 26.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Ancient Black Dragon",
+        "Str": 100,
+        "Con": 32,
+        "Dex": 15,
+        "ChallengeRating": 1598.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Demonflesh Golem",
+        "Str": 28,
+        "Con": 10,
+        "Dex": 8,
+        "ChallengeRating": 20.0,
+        "CRadjust": 1
+    },
+    {
+        "Name": "Star",
+        "Str": 15,
+        "Con": 12,
+        "Dex": 13,
+        "ChallengeRating": 274.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Githzari",
+        "Str": 66,
+        "Con": 16,
+        "Dex": 34,
+        "ChallengeRating": 986.0,
+        "CRadjust": -2
+    },
+    {
+        "Name": "Razhid's Greater Undead Guard",
+        "Str": 44,
+        "Con": 16,
+        "Dex": 16,
+        "ChallengeRating": 44.0,
+        "CRadjust": -59
+    },
+    {
+        "Name": "Greater Horror",
+        "Str": 26,
+        "Con": 10,
+        "Dex": 26,
+        "ChallengeRating": 24.0,
+        "CRadjust": 1
+    },
+    {
+        "Name": "Greater Yuan-ti Sorcerer",
+        "Str": 34,
+        "Con": 18,
+        "Dex": 18,
+        "ChallengeRating": 219.0,
+        "CRadjust": 19
+    },
+    {
+        "Name": "Smithy",
+        "Str": 16,
+        "Con": 16,
+        "Dex": 13,
+        "ChallengeRating": 0.5,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Greater Shadow Mage",
+        "Str": 40,
+        "Con": 10,
+        "Dex": 12,
+        "ChallengeRating": 44.0,
+        "CRadjust": -110
+    },
+    {
+        "Name": "Heavenly Angel",
+        "Str": 90,
+        "Con": 32,
+        "Dex": 28,
+        "ChallengeRating": 619.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Fiendish Tiefling",
+        "Str": 66,
+        "Con": 20,
+        "Dex": 12,
+        "ChallengeRating": 638.0,
+        "CRadjust": 32
+    },
+    {
+        "Name": "Greater Yuan-ti Necromancer",
+        "Str": 20,
+        "Con": 14,
+        "Dex": 22,
+        "ChallengeRating": 214.0,
+        "CRadjust": 119
+    },
+    {
+        "Name": "Drow Warrior",
+        "Str": 30,
+        "Con": 14,
+        "Dex": 24,
+        "ChallengeRating": 20.0,
+        "CRadjust": -7
+    },
+    {
+        "Name": "Z Bad Drow",
+        "Str": 18,
+        "Con": 20,
+        "Dex": 50,
+        "ChallengeRating": 50.0,
+        "CRadjust": -82
+    },
+    {
+        "Name": "Greater Abyssal Devil",
+        "Str": 66,
+        "Con": 16,
+        "Dex": 12,
+        "ChallengeRating": 44.0,
+        "CRadjust": -52
+    },
+    {
+        "Name": "Fezlixzilles",
+        "Str": 96,
+        "Con": 40,
+        "Dex": 12,
+        "ChallengeRating": 307.0,
+        "CRadjust": 16
+    },
+    {
+        "Name": "Goblin Crack Head",
+        "Str": 84,
+        "Con": 64,
+        "Dex": 32,
+        "ChallengeRating": 472.0,
+        "CRadjust": 5
+    },
+    {
+        "Name": "The Frost Giant King",
+        "Str": 90,
+        "Con": 40,
+        "Dex": 25,
+        "ChallengeRating": 1513.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Godzilla",
+        "Str": 66,
+        "Con": 30,
+        "Dex": 30,
+        "ChallengeRating": 44.0,
+        "CRadjust": -2
+    },
+    {
+        "Name": "Ancient Dracolich",
+        "Str": 88,
+        "Con": 10,
+        "Dex": 10,
+        "ChallengeRating": 2015.0,
+        "CRadjust": -107
+    },
+    {
+        "Name": "Queen of the Damned",
+        "Str": 100,
+        "Con": 80,
+        "Dex": 10,
+        "ChallengeRating": 461.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "God Character Model",
+        "Str": 44,
+        "Con": 24,
+        "Dex": 34,
+        "ChallengeRating": 61.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Greater Vampire",
+        "Str": 28,
+        "Con": 18,
+        "Dex": 26,
+        "ChallengeRating": 35.0,
+        "CRadjust": -13
+    },
+    {
+        "Name": "Male Body Model",
+        "Str": 16,
+        "Con": 16,
+        "Dex": 13,
+        "ChallengeRating": 0.5,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Drow Elite Guard",
+        "Str": 24,
+        "Con": 18,
+        "Dex": 18,
+        "ChallengeRating": 60.0,
+        "CRadjust": -45
+    },
+    {
+        "Name": "Valkamut's Guard",
+        "Str": 46,
+        "Con": 18,
+        "Dex": 20,
+        "ChallengeRating": 43.0,
+        "CRadjust": -18
+    },
+    {
+        "Name": "The Queen Matron Mat'Lis'sk",
+        "Str": 70,
+        "Con": 26,
+        "Dex": 31,
+        "ChallengeRating": 305.0,
+        "CRadjust": -34
+    },
+    {
+        "Name": "Shadow Dragon Guard",
+        "Str": 60,
+        "Con": 33,
+        "Dex": 40,
+        "ChallengeRating": 42.0,
+        "CRadjust": -12
+    },
+    {
+        "Name": "Satyr Pimp",
+        "Str": 20,
+        "Con": 46,
+        "Dex": 32,
+        "ChallengeRating": 477.0,
+        "CRadjust": 106
+    },
+    {
+        "Name": "Greater Lich",
+        "Str": 12,
+        "Con": 24,
+        "Dex": 14,
+        "ChallengeRating": 46.0,
+        "CRadjust": -7
+    },
+    {
+        "Name": "Fallen Drow Priestess",
+        "Str": 98,
+        "Con": 28,
+        "Dex": 22,
+        "ChallengeRating": 2237.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Drow Weapon Master",
+        "Str": 32,
+        "Con": 32,
+        "Dex": 11,
+        "ChallengeRating": 197.0,
+        "CRadjust": 1
+    },
+    {
+        "Name": "\u2020Tess\u2020 Goddess of Pleasure",
+        "Str": 30,
+        "Con": 30,
+        "Dex": 30,
+        "ChallengeRating": 27.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Underworld Soldier",
+        "Str": 38,
+        "Con": 20,
+        "Dex": 20,
+        "ChallengeRating": 21.0,
+        "CRadjust": -21
+    },
+    {
+        "Name": "The Banker",
+        "Str": 19,
+        "Con": 14,
+        "Dex": 8,
+        "ChallengeRating": 557.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Undead Drow Priestess",
+        "Str": 34,
+        "Con": 16,
+        "Dex": 12,
+        "ChallengeRating": 42.0,
+        "CRadjust": -35
+    },
+    {
+        "Name": "Duergar Rogue",
+        "Str": 40,
+        "Con": 20,
+        "Dex": 20,
+        "ChallengeRating": 46.0,
+        "CRadjust": -75
+    },
+    {
+        "Name": "Mithril Imp",
+        "Str": 35,
+        "Con": 19,
+        "Dex": 35,
+        "ChallengeRating": 27.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Greater WillOWisp",
+        "Str": 68,
+        "Con": 10,
+        "Dex": 20,
+        "ChallengeRating": 44.0,
+        "CRadjust": -83
+    },
+    {
+        "Name": "Ancient Mummy Warrior",
+        "Str": 64,
+        "Con": 28,
+        "Dex": 25,
+        "ChallengeRating": 28.0,
+        "CRadjust": -22
+    },
+    {
+        "Name": "Razhid",
+        "Str": 48,
+        "Con": 30,
+        "Dex": 26,
+        "ChallengeRating": 287.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Bad Res Ref (Don't Use)",
+        "Str": 74,
+        "Con": 10,
+        "Dex": 30,
+        "ChallengeRating": 48.0,
+        "CRadjust": -37
+    },
+    {
+        "Name": "Greater Rakashasa",
+        "Str": 62,
+        "Con": 20,
+        "Dex": 40,
+        "ChallengeRating": 44.0,
+        "CRadjust": -80
+    },
+    {
+        "Name": "Greater Storm Giant",
+        "Str": 50,
+        "Con": 30,
+        "Dex": 12,
+        "ChallengeRating": 304.0,
+        "CRadjust": -2
+    },
+    {
+        "Name": "Greater Draconian Lich",
+        "Str": 66,
+        "Con": 10,
+        "Dex": 10,
+        "ChallengeRating": 44.0,
+        "CRadjust": -38
+    },
+    {
+        "Name": "Mortanna",
+        "Str": 10,
+        "Con": 14,
+        "Dex": 14,
+        "ChallengeRating": 14.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "King of the Mummies",
+        "Str": 26,
+        "Con": 14,
+        "Dex": 18,
+        "ChallengeRating": 25.0,
+        "CRadjust": 5
+    },
+    {
+        "Name": "Greater Death Sladd",
+        "Str": 62,
+        "Con": 18,
+        "Dex": 20,
+        "ChallengeRating": 44.0,
+        "CRadjust": -46
+    },
+    {
+        "Name": "Bazmot",
+        "Str": 98,
+        "Con": 40,
+        "Dex": 30,
+        "ChallengeRating": 1090.0,
+        "CRadjust": 38
+    },
+    {
+        "Name": "Greater Shadow Fiend",
+        "Str": 68,
+        "Con": 10,
+        "Dex": 14,
+        "ChallengeRating": 44.0,
+        "CRadjust": -66
+    },
+    {
+        "Name": "Arcane Servant",
+        "Str": 20,
+        "Con": 16,
+        "Dex": 20,
+        "ChallengeRating": 42.0,
+        "CRadjust": -73
+    },
+    {
+        "Name": "Balor Lord",
+        "Str": 66,
+        "Con": 12,
+        "Dex": 13,
+        "ChallengeRating": 44.0,
+        "CRadjust": -35
+    },
+    {
+        "Name": "Doom Gaurd",
+        "Str": 22,
+        "Con": 20,
+        "Dex": 16,
+        "ChallengeRating": 14.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Curly",
+        "Str": 28,
+        "Con": 13,
+        "Dex": 13,
+        "ChallengeRating": 33.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "S\u00f8mbra \u2020he God of Shadows\u2020",
+        "Str": 30,
+        "Con": 30,
+        "Dex": 30,
+        "ChallengeRating": 483.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "Night Golem",
+        "Str": 25,
+        "Con": 10,
+        "Dex": 19,
+        "ChallengeRating": 30.0,
+        "CRadjust": 0
+    },
+    {
+        "Name": "z badder drow",
+        "Str": 42,
+        "Con": 24,
+        "Dex": 22,
+        "ChallengeRating": 8.0,
+        "CRadjust": -90
+    },
+    {
+        "Name": "Battle Drider Elite",
+        "Str": 72,
+        "Con": 20,
+        "Dex": 32,
+        "ChallengeRating": 48.0,
+        "CRadjust": -78
+    },
+    {
+        "Name": "Drow Battle Spider",
+        "Str": 34,
+        "Con": 16,
+        "Dex": 22,
+        "ChallengeRating": 16.0,
+        "CRadjust": -1
+    },
+    {
+        "Name": "Ancient Warrior King",
+        "Str": 90,
+        "Con": 30,
+        "Dex": 15,
+        "ChallengeRating": 341.0,
+        "CRadjust": -8
+    },
+    {
+        "Name": "Drow Elite Assassin",
+        "Str": 33,
+        "Con": 20,
+        "Dex": 58,
+        "ChallengeRating": 50.0,
+        "CRadjust": -107
+    },
+    {
+        "Name": "The Lich King's Gaurd",
+        "Str": 66,
+        "Con": 8,
+        "Dex": 8,
+        "ChallengeRating": 44.0,
+        "CRadjust": -40
+    },
+    {
+        "Name": "Bazmot's Greater Gaurd",
+        "Str": 20,
+        "Con": 10,
+        "Dex": 12,
+        "ChallengeRating": 44.0,
+        "CRadjust": -45
+    },
+    {
+        "Name": "~Z.a.r.r.a~ Goddess of Shadows",
+        "Str": 30,
+        "Con": 32,
+        "Dex": 28,
+        "ChallengeRating": 4511.0,
+        "CRadjust": 0
+    }
+]
