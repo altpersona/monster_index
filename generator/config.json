@@ -1,0 +1,52 @@
+{
+  "prc_root": "/home/default/projects/projects/prc",
+  "nwn_bin": "/home/default/projects/projects/nwn/bin/nwn",
+  "base_tlk": "/home/default/projects/projects/rack_maint/nwnee/lang/en/data/dialog.tlk",
+  "cache_dir": "generator/.cache",
+
+  "excluded_dirs": [
+    "PRC8",
+    "PRC8_Builds",
+    "PRC8 Manual",
+    "probe",
+    "Underworld 2 [PRC8-CEP3]"
+  ],
+  "skip_dirs": ["_removed", ".nasher", "_notes", ".git", "node_modules"],
+
+  "prc8_expansion": {
+    "name": "PRC8 Expansion (prc8_misc.hak)",
+    "source_dir": "PRC8/nwn/nwnprc/trunk/others"
+  },
+
+  "name_overrides": {
+    "Aielund_PRC8": "The Aielund Saga [PRC8]"
+  },
+
+  "tlk_search_paths": [
+    "{module_dir}",
+    "{prc_root}",
+    "PRC8/nwn/nwnprc/trunk/tlk",
+    "Underworld 2 [PRC8-CEP3]",
+    "FaerunTimeline_PRC8/_deps/tlk"
+  ],
+  "tlk_fallback_chain": ["prc8_consortium"],
+
+  "twoda_sources": [
+    { "type": "dir",  "path": "PRC8/nwn/nwnprc/DocGen/trunk/base_nwn_files" },
+    { "type": "hak",  "path": "/home/default/projects/projects/rack_maint/hak/cep3_2das.hak" },
+    { "type": "dir",  "path": "PRC8/nwn/nwnprc/trunk/2das" },
+    { "type": "dir",  "path": "PRC8/nwn/nwnprc/trunk/race2das" },
+    { "type": "hak",  "path": "prc/Underworld 2 [PRC8-CEP3]/prc8_cep3_merge.hak", "prc_root_relative": true },
+    { "type": "key",  "root": "/home/default/projects/projects/rack_maint/nwnee", "fallback": true }
+  ],
+
+  "itemprop_twoda_sources": [
+    { "type": "hak",  "path": "prc/Underworld 2 [PRC8-CEP3]/prc8_cep3_merge.hak", "prc_root_relative": true },
+    { "type": "dir",  "path": "PRC8/nwn/nwnprc/trunk/2das" },
+    { "type": "key",  "root": "/home/default/projects/projects/rack_maint/nwnee", "fallback": true }
+  ],
+
+  "description_truncate": 280,
+  "monster_rarity": { "uncommon": 5, "rare": 10, "epic": 15, "legendary": 20, "mythic": 25 },
+  "item_rarity_gp": { "uncommon": 1000, "rare": 10000, "epic": 50000, "legendary": 200000, "mythic": 1000000 }
+}
