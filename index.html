@@ -405,6 +405,7 @@
         .cr-value {
             font-size: 1.1rem;
             font-weight: bold;
+            color: #fff;
         }
 
         .cr-adjust {
@@ -541,16 +542,21 @@
                     'Identity': ['Name', 'BaseItem'],
                     'Value & Stack': ['GoldPieceValue', 'StackSize', 'Charges'],
                     'Flags': ['Plot', 'Identified', 'Stolen', 'Cursed'],
-                    'Properties': ['PropertiesCount']
+                    'Properties': ['Property', 'PropertiesCount']
                 },
-                labels: { GoldPieceValue: 'GP Value', BaseItem: 'Base Item', PropertiesCount: 'Properties' },
+                labels: { GoldPieceValue: 'GP Value', BaseItem: 'Base Item',
+                          PropertiesCount: 'Property Count', Property: 'Has Property' },
                 facetValue(rec, key) {
+                    if (key === 'Property')
+                        return rec.PropertiesDecoded || [];
                     const v = rec[key];
                     if (['Plot', 'Identified', 'Stolen', 'Cursed'].includes(key))
                         return v ? 'Yes' : 'No';
                     return v;
                 },
                 match(rec, key, value) {
+                    if (key === 'Property')
+                        return (rec.PropertiesDecoded || []).includes(value);
                     return String(this.facetValue(rec, key)) === String(value);
                 },
                 render(rec) { return renderItemCard(rec); }
