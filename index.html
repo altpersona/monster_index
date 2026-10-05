@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monster &amp; Item Index</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Roboto:wght@400;500&display=swap">
+    <style>
+        body {
+            background-color: #0a0a0f;
+            color: #e0e0e0;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            background-image: url('https://www.transparenttextures.com/patterns/dark-wood.png');
+        }
+
+        h1 {
+            margin-top: 20px;
+            color: #ffd700;
+            text-transform: uppercase;
+            font-family: 'MedievalSharp', cursive;
+            font-size: 2.5rem;
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+            letter-spacing: 2px;
+        }
+
+        .container {
+            width: 95%;
+            max-width: 900px;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: rgba(20, 20, 30, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+            border: 1px solid #3a3a4a;
+        }
+
+        #file-dropdown {
+            margin-bottom: 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+        }
+
+        #file-dropdown label {
+            flex: 1;
+            text-align: right;
+            padding-right: 10px;
+            font-weight: 500;
+            color: #d0d0d0;
+        }
+
+        #file-dropdown select {
+            flex: 2;
+            background-color: #252530;
+            color: #e0e0e0;
+            border: 1px solid #6a5acd;
+            padding: 8px;
+            border-radius: 5px;
+            outline: none;
+            transition: all 0.3s;
+            box-shadow: 0 0 5px rgba(106, 90, 205, 0.3);
+        }
+
+        #file-dropdown select:hover {
+            border-color: #9370db;
+            box-shadow: 0 0 8px rgba(147, 112, 219, 0.5);
+        }
+
+        /* Tabs */
+        .tabs {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+
+        .tab {
+            flex: 1;
+            padding: 10px;
+            text-align: center;
+            background-color: #252530;
+            color: #aaa;
+            border: 1px solid #3a3a4a;
+            border-radius: 8px;
+            cursor: pointer;
+            font-family: 'MedievalSharp', cursive;
+            font-size: 1.2rem;
+            transition: all 0.2s;
+            user-select: none;
+        }
+
+        .tab:hover {
+            border-color: #9370db;
+            color: #e0e0e0;
+        }
+
+        .tab.active {
+            background: linear-gradient(to bottom, rgba(60, 60, 80, 0.95), rgba(40, 40, 60, 0.95));
+            color: #ffd700;
+            border-color: #ffd700;
+            box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+        }
+
+        #result-count {
+            color: #aaa;
+            font-size: 0.85rem;
+            margin-bottom: 10px;
+        }
+
+        #dropdowns label {
+            font-size: 0.8rem;
+            color: #aaa;
+            margin-bottom: 3px;
+            display: block;
+            text-align: left;
+            padding-right: 0;
+            font-weight: normal;
+        }
+
+        #dropdowns select {
+            width: 100%;
+            background-color: #252530;
+            color: #e0e0e0;
+            border: 1px solid #6a5acd;
+            padding: 8px;
+            border-radius: 5px;
+            outline: none;
+            transition: all 0.3s;
+            font-size: 0.9rem;
+            box-shadow: 0 0 5px rgba(106, 90, 205, 0.3);
+        }
+
+        #dropdowns select:hover {
+            border-color: #9370db;
+            box-shadow: 0 0 8px rgba(147, 112, 219, 0.5);
+        }
+
+        #results {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+            padding: 10px 0;
+        }
+
+        .monster, .item {
+            position: relative;
+            height: auto;
+            min-height: 300px;
+            padding: 0;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+        }
+
+        .monster { min-height: 450px; }
+
+        .monster:hover, .item:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+        }
+
+        .monster-header, .item-header {
+            padding: 15px;
+            background: linear-gradient(to bottom, rgba(60, 60, 80, 0.9), rgba(40, 40, 60, 0.9));
+            border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .monster-name, .item-name {
+            font-family: 'MedievalSharp', cursive;
+            font-size: 1.4rem;
+            margin: 0;
+            color: #fff;
+            text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+            text-align: center;
+        }
+
+        .item-subtitle {
+            font-size: 0.85rem;
+            color: #ffd700;
+            margin-top: 4px;
+        }
+
+        .monster-portrait {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-top: 10px;
+            border: 2px solid rgba(255, 215, 0, 0.5);
+            background-color: #252530;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            font-size: 0.8em;
+            color: #aaa;
+            word-break: break-all;
+            padding: 4px;
+            text-align: center;
+        }
+
+        .portrait-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .monster-body, .item-body {
+            flex: 1;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            background-color: rgba(30, 30, 40, 0.9);
+            background-image: url('https://www.transparenttextures.com/patterns/parchment.png');
+            background-blend-mode: overlay;
+        }
+
+        #dropdowns {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-areas:
+                "header header header header header header"
+                "stats stats stats stats stats stats"
+                "info info info info info info"
+                "footer footer footer footer footer footer";
+            gap: 15px 20px;
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: rgba(30, 30, 40, 0.9);
+            background-image: url('https://www.transparenttextures.com/patterns/parchment.png');
+            background-blend-mode: overlay;
+            border-radius: 12px;
+            border: 1px solid #4a4a5a;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+        }
+
+        #filter-group-Identity { grid-area: header; }
+        #filter-group-Ability-Scores { grid-area: stats; }
+        #filter-group-Value-Stack { grid-area: stats; }
+        #filter-group-Combat { grid-area: info; }
+        #filter-group-Class-Magic { grid-area: info; }
+        #filter-group-Flags { grid-area: info; }
+        #filter-group-Properties { grid-area: info; }
+
+        #filter-group-Ability-Scores .filter-items-container,
+        #filter-group-Value-Stack .filter-items-container {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 10px 15px;
+        }
+
+        #filter-group-Combat .filter-items-container,
+        #filter-group-Class-Magic .filter-items-container,
+        #filter-group-Flags .filter-items-container,
+        #filter-group-Properties .filter-items-container,
+        #filter-group-Identity .filter-items-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 10px 15px;
+        }
+
+        .filter-group-header {
+            font-family: 'MedievalSharp', cursive;
+            font-size: 1.3rem;
+            grid-column: 1 / -1;
+            color: #fff;
+            text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+            margin-top: 0;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid rgba(255, 215, 0, 0.5);
+            text-align: center;
+        }
+
+        .monster-info-grid, .item-info-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .info-item {
+            display: flex;
+            flex-direction: column;
+            padding: 8px;
+            background-color: rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .info-label {
+            font-size: 0.8rem;
+            color: #aaa;
+            margin-bottom: 3px;
+        }
+
+        .info-value {
+            font-size: 1rem;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .monster-stats {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 8px;
+            margin: 15px 0;
+        }
+
+        .stat {
+            text-align: center;
+            padding: 8px 5px;
+            background-color: rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            color: #aaa;
+            margin-bottom: 3px;
+        }
+
+        .stat-value {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .item-description {
+            font-size: 0.85rem;
+            color: #bbb;
+            font-style: italic;
+            margin: 8px 0;
+            max-height: 5.5em;
+            overflow: hidden;
+        }
+
+        .item-props {
+            margin: 8px 0 0 0;
+            padding: 0 0 0 16px;
+        }
+
+        .item-props li {
+            font-size: 0.85rem;
+            color: #d0d0d0;
+            margin-bottom: 3px;
+        }
+
+        .flag-chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin: 8px 0;
+        }
+
+        .flag-chip {
+            font-size: 0.75rem;
+            padding: 2px 8px;
+            border-radius: 10px;
+            border: 1px solid #6a5acd;
+            color: #b9a7e9;
+            background-color: rgba(40, 30, 70, 0.5);
+        }
+
+        .monster-footer, .item-footer {
+            padding: 10px 15px;
+            background: linear-gradient(to top, rgba(40, 40, 60, 0.9), rgba(60, 60, 80, 0.9));
+            border-top: 2px solid rgba(255, 255, 255, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .cr-container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .cr-row {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .cr-label {
+            font-size: 0.8rem;
+            color: #aaa;
+        }
+
+        .cr-value {
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+
+        .cr-adjust {
+            font-size: 0.9rem;
+            color: #ddd;
+        }
+
+        .gp-value {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #ffd700;
+        }
+
+        /* Rarity borders — monsters by Challenge Rating, items by GP value */
+        .rarity-common {
+            border: 2px solid #7f7f7f;
+        }
+
+        .rarity-uncommon {
+            border: 2px solid #1eff00;
+            box-shadow: 0 0 10px rgba(30, 255, 0, 0.3);
+        }
+
+        .rarity-rare {
+            border: 2px solid #0070dd;
+            box-shadow: 0 0 10px rgba(0, 112, 221, 0.4);
+        }
+
+        .rarity-epic {
+            border: 2px solid #a335ee;
+            box-shadow: 0 0 15px rgba(163, 53, 238, 0.5);
+        }
+
+        .rarity-legendary {
+            border: 2px solid #ff8000;
+            box-shadow: 0 0 20px rgba(255, 128, 0, 0.6);
+        }
+
+        .rarity-mythic {
+            border: 2px solid #e5cc80;
+            box-shadow: 0 0 20px rgba(229, 204, 128, 0.7);
+            animation: mythic-glow 2s infinite alternate;
+        }
+
+        @keyframes mythic-glow {
+            from {
+                box-shadow: 0 0 10px rgba(229, 204, 128, 0.7);
+            }
+
+            to {
+                box-shadow: 0 0 20px rgba(229, 204, 128, 0.9);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Monster &amp; Item Index</h1>
+    <div class="container">
+        <div id="file-dropdown">
+            <label for="file-select">Select Module:</label>
+            <select id="file-select">
+                <option>Loading…</option>
+            </select>
+        </div>
+        <div class="tabs">
+            <div class="tab active" id="tab-monsters">Monsters</div>
+            <div class="tab" id="tab-items">Items</div>
+        </div>
+        <div id="dropdowns">
+            <!-- Filter dropdowns will be inserted here -->
+        </div>
+        <div id="result-count"></div>
+        <div id="results">
+            <!-- Matching results will be displayed here -->
+        </div>
+    </div>
+    <script>
+        'use strict';
+
+        const state = {
+            manifest: null,
+            doc: null,          // current module payload {module, counts, monsters, items}
+            activeTab: 'monsters'
+        };
+
+        const MONSTER_RARITY = [[25, 'rarity-mythic'], [20, 'rarity-legendary'],
+                                [15, 'rarity-epic'], [10, 'rarity-rare'],
+                                [5, 'rarity-uncommon'], [0, 'rarity-common']];
+        const ITEM_RARITY = [[1000000, 'rarity-mythic'], [200000, 'rarity-legendary'],
+                             [50000, 'rarity-epic'], [10000, 'rarity-rare'],
+                             [1000, 'rarity-uncommon'], [0, 'rarity-common']];
+
+        function rarityClass(tiers, value) {
+            const v = parseFloat(value || 0);
+            for (const [min, cls] of tiers) if (v >= min) return cls;
+            return 'rarity-common';
+        }
+
+        function esc(s) {
+            return String(s).replace(/[&<>"']/g,
+                c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+        }
+
+        // ---- Tab definitions: facet groups, value accessors, card renderers ----
+
+        const TABS = {
+            monsters: {
+                records: () => state.doc.monsters,
+                groups: {
+                    'Identity': ['FirstName', 'LastName', 'Race'],
+                    'Ability Scores': ['Str', 'Dex', 'Con', 'Int', 'Wis', 'Cha'],
+                    'Combat': ['ChallengeRating', 'CR_Adjust', 'HitPoints'],
+                    'Class & Magic': ['ClassList']
+                },
+                labels: { CR_Adjust: 'CR Adjust', ClassList: 'Class' },
+                facetValue(rec, key) {
+                    if (['Str', 'Dex', 'Con', 'Int', 'Wis', 'Cha'].includes(key))
+                        return rec.Stats ? rec.Stats[key] : undefined;
+                    if (key === 'ClassList')
+                        return (rec.Classes || []).map(c => c.Class).filter(Boolean);
+                    return rec[key];
+                },
+                match(rec, key, value) {
+                    if (key === 'ClassList')
+                        return (rec.Classes || []).some(c => c.Class === value);
+                    return String(this.facetValue(rec, key)) === String(value);
+                },
+                render(rec) { return renderMonsterCard(rec); }
+            },
+            items: {
+                records: () => state.doc.items,
+                groups: {
+                    'Identity': ['Name', 'BaseItem'],
+                    'Value & Stack': ['GoldPieceValue', 'StackSize', 'Charges'],
+                    'Flags': ['Plot', 'Identified', 'Stolen', 'Cursed'],
+                    'Properties': ['PropertiesCount']
+                },
+                labels: { GoldPieceValue: 'GP Value', BaseItem: 'Base Item', PropertiesCount: 'Properties' },
+                facetValue(rec, key) {
+                    const v = rec[key];
+                    if (['Plot', 'Identified', 'Stolen', 'Cursed'].includes(key))
+                        return v ? 'Yes' : 'No';
+                    return v;
+                },
+                match(rec, key, value) {
+                    return String(this.facetValue(rec, key)) === String(value);
+                },
+                render(rec) { return renderItemCard(rec); }
+            }
+        };
+
+        // ---- Manifest / module loading ----
+
+        async function loadManifest() {
+            const resp = await fetch('data/manifest.json');
+            if (!resp.ok) throw new Error(`manifest: HTTP ${resp.status}`);
+            state.manifest = await resp.json();
+
+            const fileSelect = document.getElementById('file-select');
+            fileSelect.innerHTML = '';
+            const modules = [...state.manifest.modules].sort((a, b) =>
+                (a.kind === b.kind) ? a.name.localeCompare(b.name)
+                                    : (a.kind === 'module' ? -1 : 1));
+            modules.forEach(m => {
+                const option = document.createElement('option');
+                option.value = m.file;
+                option.textContent = `${m.name}  (${m.counts.monsters} monsters, ${m.counts.items} items)`;
+                fileSelect.appendChild(option);
+            });
+            fileSelect.addEventListener('change', () => loadModule(fileSelect.value));
+            if (modules.length) loadModule(modules[0].file);
+        }
+
+        async function loadModule(file) {
+            const results = document.getElementById('results');
+            try {
+                const resp = await fetch('data/' + file);
+                if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+                state.doc = await resp.json();
+            } catch (err) {
+                state.doc = null;
+                results.innerHTML = `<p style="color: red;">Error loading data: ${esc(err.message)}</p>`;
+                document.getElementById('dropdowns').innerHTML = '';
+                document.getElementById('result-count').textContent = '';
+                return;
+            }
+            renderActiveTab();
+        }
+
+        // ---- Filter framework (shared by both tabs) ----
+
+        function buildCategories(tab) {
+            const categories = {};
+            Object.values(tab.groups).flat().forEach(key => categories[key] = new Set());
+            tab.records().forEach(rec => {
+                Object.keys(categories).forEach(key => {
+                    const v = tab.facetValue(rec, key);
+                    if (v === undefined || v === null || v === '') return;
+                    if (Array.isArray(v)) v.forEach(x => x !== undefined && categories[key].add(x));
+                    else categories[key].add(v);
+                });
+            });
+            Object.keys(categories).forEach(key => {
+                categories[key] = [...categories[key]].sort((a, b) => {
+                    const na = parseFloat(a), nb = parseFloat(b);
+                    return (!isNaN(na) && !isNaN(nb)) ? na - nb : String(a).localeCompare(String(b));
+                });
+            });
+            return categories;
+        }
+
+        function createDropdowns(tab, categories) {
+            const container = document.getElementById('dropdowns');
+            container.innerHTML = '';
+
+            Object.entries(tab.groups).forEach(([groupName, filterKeys]) => {
+                const groupDiv = document.createElement('div');
+                groupDiv.id = `filter-group-${groupName.replace(/\s+/g, '-')}`;
+
+                const groupHeader = document.createElement('h3');
+                groupHeader.className = 'filter-group-header';
+                groupHeader.textContent = groupName;
+                groupDiv.appendChild(groupHeader);
+
+                const itemsContainer = document.createElement('div');
+                itemsContainer.className = 'filter-items-container';
+                let hasFilters = false;
+
+                filterKeys.forEach(key => {
+                    if (!categories[key] || categories[key].length === 0) return;
+                    hasFilters = true;
+                    const labelText = tab.labels[key] || key.replace(/([A-Z])/g, ' $1').trim();
+
+                    const filterItem = document.createElement('div');
+                    filterItem.className = 'filter-item';
+                    const label = document.createElement('label');
+                    label.textContent = `${labelText}:`;
+                    label.htmlFor = `filter-${key}`;
+                    filterItem.appendChild(label);
+
+                    const select = document.createElement('select');
+                    select.id = `filter-${key}`;
+                    select.dataset.filterKey = key;
+                    const defaultOption = document.createElement('option');
+                    defaultOption.value = '';
+                    defaultOption.textContent = `All ${labelText}`;
+                    select.appendChild(defaultOption);
+                    categories[key].forEach(value => {
+                        const option = document.createElement('option');
+                        option.value = value;
+                        option.textContent = value;
+                        select.appendChild(option);
+                    });
+                    select.addEventListener('change', refreshResults);
+                    filterItem.appendChild(select);
+                    itemsContainer.appendChild(filterItem);
+                });
+
+                if (hasFilters) {
+                    groupDiv.appendChild(itemsContainer);
+                    container.appendChild(groupDiv);
+                }
+            });
+        }
+
+        function refreshResults() {
+            const tab = TABS[state.activeTab];
+            const activeFilters = {};
+            document.querySelectorAll('#dropdowns select').forEach(select => {
+                if (select.value) activeFilters[select.dataset.filterKey] = select.value;
+            });
+            const filtered = tab.records().filter(rec =>
+                Object.keys(activeFilters).every(key => tab.match(rec, key, activeFilters[key])));
+            displayResults(tab, filtered);
+        }
+
+        function displayResults(tab, records) {
+            const resultsContainer = document.getElementById('results');
+            const countEl = document.getElementById('result-count');
+            countEl.textContent = `${records.length} of ${tab.records().length} shown`;
+            resultsContainer.innerHTML = '';
+            if (records.length === 0) {
+                resultsContainer.innerHTML = '<p>No records match the selected criteria.</p>';
+                return;
+            }
+            const frag = document.createDocumentFragment();
+            records.forEach(rec => frag.appendChild(tab.render(rec)));
+            resultsContainer.appendChild(frag);
+        }
+
+        // ---- Cards ----
+
+        function renderMonsterCard(monster) {
+            const monsterDiv = document.createElement('div');
+            monsterDiv.className = 'monster ' + rarityClass(MONSTER_RARITY, monster.ChallengeRating);
+
+            const nameText = monster.LastName
+                ? `${monster.FirstName} ${monster.LastName}`
+                : (monster.FirstName || 'Unnamed');
+
+            let portraitName = monster.Portrait || '';
+            if (portraitName.toLowerCase().startsWith('po_')) portraitName = portraitName.substring(3);
+            if (portraitName.endsWith('_')) portraitName = portraitName.slice(0, -1);
+            if (!portraitName) portraitName = '?';
+
+            monsterDiv.innerHTML = `
+                <div class="monster-header">
+                    <h2 class="monster-name">${esc(nameText)}</h2>
+                    <div class="monster-portrait"><img class="portrait-image"
+                        src="data/portraits/${esc(portraitName.toLowerCase())}.png"
+                        alt="${esc(portraitName || nameText)}"></div>
+                </div>
+                <div class="monster-body">
+                    <div class="monster-info-grid">
+                        <div class="info-item"><span class="info-label">Race</span>
+                            <span class="info-value">${esc(monster.Race || '—')}</span></div>
+                        <div class="info-item"><span class="info-label">HP</span>
+                            <span class="info-value">${monster.HitPoints ?? '—'}</span></div>
+                    </div>
+                    <div class="monster-stats">
+                        ${['Str', 'Dex', 'Con', 'Int', 'Wis', 'Cha'].map(key => `
+                            <div class="stat">
+                                <span class="stat-label">${key.toUpperCase()}</span>
+                                <span class="stat-value">${monster.Stats && monster.Stats[key] !== undefined ? monster.Stats[key] : '—'}</span>
+                            </div>`).join('')}
+                    </div>
+                    ${(monster.Classes || []).length ? `
+                    <div class="info-item"><span class="info-label">Classes</span>
+                        <span class="info-value">${esc((monster.Classes || [])
+                            .map(c => `${c.Class || '?'} ${c.Level !== undefined ? c.Level : '?'}`).join(', '))}</span>
+                    </div>` : ''}
+                </div>
+                <div class="monster-footer">
+                    <div class="cr-container">
+                        <div class="cr-row"><span class="cr-label">CR:</span>
+                            <span class="cr-value">${parseFloat(monster.ChallengeRating || 0).toFixed(1)}</span></div>
+                        ${parseInt(monster.CR_Adjust || 0) !== 0 ? `
+                        <div class="cr-row"><span class="cr-adjust">(Adjust: ${parseInt(monster.CR_Adjust) > 0 ? '+' : ''}${parseInt(monster.CR_Adjust)})</span></div>` : ''}
+                    </div>
+                </div>`;
+
+            const img = monsterDiv.querySelector('.portrait-image');
+            img.onerror = function () {
+                this.style.display = 'none';
+                this.parentElement.textContent = monster.Portrait || '?';
+            };
+            return monsterDiv;
+        }
+
+        function renderItemCard(item) {
+            const itemDiv = document.createElement('div');
+            itemDiv.className = 'item ' + rarityClass(ITEM_RARITY, item.GoldPieceValue);
+
+            const flags = ['Plot', 'Identified', 'Stolen', 'Cursed']
+                .filter(f => item[f]);
+            const props = (item.PropertiesDecoded || []);
+
+            itemDiv.innerHTML = `
+                <div class="item-header">
+                    <h2 class="item-name">${esc(item.Name || 'Unnamed')}</h2>
+                    <div class="item-subtitle">${esc(item.BaseItem || '')}</div>
+                </div>
+                <div class="item-body">
+                    <div class="item-info-grid">
+                        <div class="info-item"><span class="info-label">Stack Size</span>
+                            <span class="info-value">${item.StackSize ?? '—'}</span></div>
+                        <div class="info-item"><span class="info-label">Charges</span>
+                            <span class="info-value">${item.Charges ?? '—'}</span></div>
+                    </div>
+                    ${flags.length ? `<div class="flag-chips">${flags.map(f => `<span class="flag-chip">${f}</span>`).join('')}</div>` : ''}
+                    ${item.Description ? `<div class="item-description">${esc(item.Description)}</div>` : ''}
+                    ${props.length ? `<ul class="item-props">${props.map(p => `<li>${esc(p)}</li>`).join('')}</ul>` : ''}
+                </div>
+                <div class="item-footer">
+                    <div class="cr-container">
+                        <div class="cr-row"><span class="cr-label">Properties:</span>
+                            <span class="cr-value">${item.PropertiesCount ?? 0}</span></div>
+                    </div>
+                    <div class="gp-value">${(item.GoldPieceValue || 0).toLocaleString()} gp</div>
+                </div>`;
+            return itemDiv;
+        }
+
+        // ---- Tabs / init ----
+
+        function renderActiveTab() {
+            if (!state.doc) return;
+            const tab = TABS[state.activeTab];
+            document.getElementById('tab-monsters').classList.toggle('active', state.activeTab === 'monsters');
+            document.getElementById('tab-items').classList.toggle('active', state.activeTab === 'items');
+            if (!tab.records().length) {
+                document.getElementById('dropdowns').innerHTML = '';
+                document.getElementById('result-count').textContent = '';
+                document.getElementById('results').innerHTML =
+                    `<p>No ${state.activeTab} in this module.</p>`;
+                return;
+            }
+            createDropdowns(tab, buildCategories(tab));
+            refreshResults();
+        }
+
+        document.getElementById('tab-monsters').addEventListener('click', () => {
+            state.activeTab = 'monsters';
+            renderActiveTab();
+        });
+        document.getElementById('tab-items').addEventListener('click', () => {
+            state.activeTab = 'items';
+            renderActiveTab();
+        });
+
+        loadManifest().catch(err => {
+            document.getElementById('results').innerHTML =
+                `<p style="color: red;">Error loading manifest: ${esc(err.message)}</p>`;
+        });
+
+        // deep links: index.html#items opens on the items tab
+        if (location.hash === '#items') state.activeTab = 'items';
+    </script>
+</body>
+
+</html>
