@@ -4,12 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark">
     <title>Monster &amp; Item Index</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Roboto:wght@400;500&display=swap">
     <style>
         body {
+            color-scheme: dark;
             background-color: #0a0a0f;
             color: #e0e0e0;
             font-family: 'Roboto', sans-serif;
@@ -142,6 +144,22 @@
         #dropdowns select:hover {
             border-color: #9370db;
             box-shadow: 0 0 8px rgba(147, 112, 219, 0.5);
+        }
+
+        /* native option list — force dark too, some browsers ignore the
+           parent select's colors for the popup without color-scheme */
+        #dropdowns select option {
+            background-color: #252530;
+            color: #e0e0e0;
+        }
+
+        /* Properties group: one wide facet (Has Property) + one narrow
+           (Property Count), on a single clean row */
+        #filter-group-Properties .filter-items-container {
+            display: grid;
+            grid-template-columns: minmax(220px, 2fr) minmax(140px, 1fr);
+            gap: 10px 15px;
+            align-items: end;
         }
 
         #results {
