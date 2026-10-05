@@ -133,12 +133,20 @@
             background-color: #252530;
             color: #e0e0e0;
             border: 1px solid #6a5acd;
-            padding: 8px;
+            padding: 8px 26px 8px 8px;
             border-radius: 5px;
             outline: none;
             transition: all 0.3s;
             font-size: 0.9rem;
             box-shadow: 0 0 5px rgba(106, 90, 205, 0.3);
+            /* kill the native widget rendering entirely — some browsers
+               (Firefox/Linux without color-scheme support) paint the closed
+               select's text with system light-scheme colors otherwise */
+            appearance: none;
+            -webkit-appearance: none;
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%239370db'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 8px center;
         }
 
         #dropdowns select:hover {
