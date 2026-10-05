@@ -167,7 +167,7 @@
             display: grid;
             grid-template-columns: minmax(220px, 2fr) minmax(140px, 1fr);
             gap: 10px 15px;
-            align-items: end;
+            align-items: start;
         }
 
         #results {
@@ -570,6 +570,9 @@
                     'Flags': ['Plot', 'Identified', 'Stolen', 'Cursed'],
                     'Properties': ['Property', 'PropertiesCount']
                 },
+                // these groups render bare — no header, no per-field labels;
+                // the dropdown's own "All X" default text labels it well enough
+                bare_groups: ['Flags', 'Properties'],
                 labels: { GoldPieceValue: 'GP Value', BaseItem: 'Base Item',
                           PropertiesCount: 'Property Count', Property: 'Has Property' },
                 facetValue(rec, key) {
@@ -654,13 +657,16 @@
             container.innerHTML = '';
 
             Object.entries(tab.groups).forEach(([groupName, filterKeys]) => {
+                const bare = (tab.bare_groups || []).includes(groupName);
                 const groupDiv = document.createElement('div');
                 groupDiv.id = `filter-group-${groupName.replace(/\s+/g, '-')}`;
 
-                const groupHeader = document.createElement('h3');
-                groupHeader.className = 'filter-group-header';
-                groupHeader.textContent = groupName;
-                groupDiv.appendChild(groupHeader);
+                if (!bare) {
+                    const groupHeader = document.createElement('h3');
+                    groupHeader.className = 'filter-group-header';
+                    groupHeader.textContent = groupName;
+                    groupDiv.appendChild(groupHeader);
+                }
 
                 const itemsContainer = document.createElement('div');
                 itemsContainer.className = 'filter-items-container';
@@ -673,10 +679,12 @@
 
                     const filterItem = document.createElement('div');
                     filterItem.className = 'filter-item';
-                    const label = document.createElement('label');
-                    label.textContent = `${labelText}:`;
-                    label.htmlFor = `filter-${key}`;
-                    filterItem.appendChild(label);
+                    if (!bare) {
+                        const label = document.createElement('label');
+                        label.textContent = `${labelText}:`;
+                        label.htmlFor = `filter-${key}`;
+                        filterItem.appendChild(label);
+                    }
 
                     const select = document.createElement('select');
                     select.id = `filter-${key}`;
