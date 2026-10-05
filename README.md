@@ -19,6 +19,18 @@ Two parts:
     python3 -m http.server 8000
     # open http://localhost:8000/   (#items deep-links to the items tab)
 
+Opening index.html directly off disk (file://) does NOT work — the viewer
+fetch()es data/, which browsers block for local files.
+
+## Deploy (production)
+
+    ./deploy.sh        # rsyncs index.html + data/ to the nwserver box
+                       # → https://raptio.us/monster_index/
+
+Deploy path: raptio.us edge (openresty) → nwserver Apache default vhost →
+`/var/www/html/monster_index/`. Drop-in portraits on the prod side are
+preserved by the deploy (excluded from --delete).
+
 ## Regenerate
 
     python3 generator/generate.py --list      # enumerate module workdirs
