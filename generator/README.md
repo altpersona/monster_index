@@ -38,10 +38,13 @@ run it after touching any lib file.
 
 ## Known approximations (documented, deliberate)
 
-- **Missing merge TLKs**: `prc8_cep1_merge`, `prc8_cep271_mrg`, `prc8_pq31_merge`
-  do not exist on this machine (~30 modules want them). Custom strrefs in
-  those modules degrade to the consortium TLK, then to empty — visible as
-  `counts.unresolved_strrefs`, not silent.
+- **Shared TLK pool**: the merge TLKs (`prc8_cep1_merge`, `prc8_pq31_merge`,
+  the CEP2 merges) and the server-fresh `prc8_consortium`/`prc8_ancordia`
+  live in `prc/_shared_tlk/` (fetched from the nwserver's `~/nwn/tlk`).
+  `prc8_cep271_mrg` does not exist even on the server — `prc8_cep269_mrg` is
+  symlinked as its stand-in (CEP 2.71 vs 2.69 merge, near-identical ranges).
+  ~32 strrefs remain unresolved machine-wide, visible per module in
+  `counts.unresolved_strrefs`.
 - **2DA shadow order is global**, not per-module-hak-stack; a module whose hak
   order differs from the fixed chain can label an edge-case row differently
   than in-game.

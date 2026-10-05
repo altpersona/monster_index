@@ -9,7 +9,8 @@
     "PRC8_Builds",
     "PRC8 Manual",
     "probe",
-    "Underworld 2 [PRC8-CEP3]"
+    "Underworld 2 [PRC8-CEP3]",
+    "_shared_tlk"
   ],
   "skip_dirs": ["_removed", ".nasher", "_notes", ".git", "node_modules"],
 
@@ -24,6 +25,7 @@
 
   "tlk_search_paths": [
     "{module_dir}",
+    "_shared_tlk",
     "{prc_root}",
     "PRC8/nwn/nwnprc/trunk/tlk",
     "Underworld 2 [PRC8-CEP3]",
